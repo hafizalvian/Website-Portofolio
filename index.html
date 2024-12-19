@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Pengaturan Meta dan Judul -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+
+    <!-- Menghubungkan File CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">Portfolio</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Beranda</a></li>
+            <li><a href="#about" class="nav-link">Tentang</a></li>
+            <li><a href="#projects" class="nav-link">Proyek</a></li>
+            <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Bagian Beranda -->
+    <section id="home" class="scroll-section">
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="fade-in">Selamat Datang di Portfolio Saya</h1>
+                <p class="subtitle fade-in">Pengembang Front End</p>
+                <a href="#contact" class="cta-button fade-in">Hubungi Saya</a>
+            </div>
+            <div class="hero-image fade-in">
+                <img src="assets/profil2.png" alt="Foto Profil" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="about" class="scroll-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate alias distinctio quibusdam nesciunt facilis, harum optio reiciendis ut corporis laudantium error, sit sequi cupiditate magnam doloremque eaque saepe, esse maiores temporibus aliquid? Neque atque consectetur possimus repellendus placeat unde asperiores?</p>
+                </div>
+                <div class="skills fade-in">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fas fa-bezier-curve"></i>
+                        <span>CorelDraw</span>
+                    </div>
+                    <div class="skill-icon">
+                        <i class="fas fa-video"></i>
+                        <span>CapCut</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="projects" class="scroll-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Proyek Saya</h2>
+            <div class="projects-grid">
+                <!-- Proyek 1 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/bgprojek.png" alt="Proyek 1" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 1</h3>
+                        <p>Website Portofolio</p>
+                        <div class="project-links">
+                            <a href="https://www.tiktok.com/@ceboxxx_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-globe"></i> Demo Langsung
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Kode
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Proyek 2 -->
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <img src="assets/bgprojek.png" alt="Proyek 2" loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Nama Proyek 2</h3>
+                        <p>Website Coba-coba</p>
+                        <div class="project-links">
+                            <a href="https://www.tiktok.com/@ceboxxx_?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-globe"></i> Demo Langsung
+                            </a>
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fab fa-github"></i> Kode
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="contact" class="scroll-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Hubungi Saya</h2>
+            <div class="contact-content fade-in">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" required placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required placeholder="Email Anda">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" required placeholder="Pesan Anda"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Kirim Pesan</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" target="_blank" class="fade-in"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank" class="fade-in"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="fade-in"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Portfolio. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Menghubungkan File JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
